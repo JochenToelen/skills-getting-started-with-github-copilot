@@ -33,6 +33,16 @@ A super simple FastAPI application that allows students to view and sign up for 
 | POST   | `/activities/{activity_name}/signup?email=student@mergington.edu` | Sign up for an activity                                             |
 | DELETE | `/activities/{activity_name}/participants?email=student@mergington.edu` | Unregister a student from an activity                               |
 
+## Running Backend Tests
+
+Run the backend API tests from the project root:
+
+```
+pytest tests/ -v
+```
+
+The test suite follows the AAA pattern (Arrange-Act-Assert) and isolates in-memory activity data per test.
+
 ## Data Model
 
 The application uses a simple data model with meaningful identifiers:
